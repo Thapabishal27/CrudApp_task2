@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #2596be;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  padding: 50px;
+}
+
+.input-section {
+  background-color: #073357;
   color: white;
+  padding: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.title-input {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  padding: 12px;
+}
+
+label {
+  font-size: 18px;
+  display: block;
+}
+
+input {
+  width: 350px;
+  height: 40px;
+  font-size: 18px;
+  padding: 4px;
+  border-style: none;
+  margin-bottom: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+.submit {
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 10px 5px 10px;
+  border: 2px none;
+  margin-top: 18px;
+}
+
+/* ------------------------------------------------------------- */
+.user-section {
+  width: 1025px;
+  margin-left: 20px;
+  height: 600px;
+  background-color: whitesmoke;
+}
+.table-section {
+  padding: 16px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+thead th {
+  text-align: left;
+  background-color: #073357;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e6e9ee;
+}
+
+tbody td,
+thead th {
+  border: 1px solid none;
+  padding: 8px;
+}
+
+tbody tr:hover {
+  background-color: rgb(226, 220, 220);
+}
+
+tbody td {
+  font-size: 14px;
+  color: #073357;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.edit {
+  background-color: rgb(0, 109, 243);
+  color: white;
+  border: none;
+  padding: 6px;
+  margin-right: 20px;
+}
+
+.edit:hover {
+  background-color: rgb(3, 84, 183);
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px;
+}
+
+.delete:hover {
+  background-color: rgb(213, 5, 5);
 }
